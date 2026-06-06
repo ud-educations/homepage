@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>プライバシーポリシー | 株式会社UD教育社</title>
+<meta name="description" content="株式会社UD教育社のプライバシーポリシー（個人情報保護方針）。GDPR・個人情報保護法に準拠した個人情報の取り扱いについて説明します。">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://www.ud-education.com/privacy.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Noto+Sans+JP:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Noto+Sans+JP:wght@400;500;700&display=swap"></noscript>
+<style>
+:root{
+  --brand:#818aff;--brand-light:#a8b0ff;--brand-dark:#5c66e0;
+  --brand-subtle:#f0f1ff;--brand-subtle2:#e6e8ff;
+  --ink:#1a1a2e;--ink-mid:#3d3d5c;--ink-soft:#6b6b8a;
+  --surface:#fff;--surface-2:#f8f8fc;--border:#e2e3f0;
+  --radius:16px;--radius-sm:8px;
+  --font-h:'Kosugi Maru','Noto Sans JP',sans-serif;
+  --font-sans:'Noto Sans JP',sans-serif;
+  --header-h:68px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 16px)}
+body{font-family:var(--font-sans);color:var(--ink);background:var(--surface);line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:var(--brand-dark);text-decoration:underline;transition:opacity .2s}
+a:hover{opacity:.75}
+:focus-visible{outline:3px solid var(--brand);outline-offset:3px;border-radius:4px}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.93);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);height:var(--header-h);display:flex;align-items:center}
+.nav-inner{max-width:900px;margin:0 auto;padding:0 24px;width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-mark{width:36px;height:36px;background:linear-gradient(135deg,var(--brand),var(--brand-dark));border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:15px;font-weight:700;flex-shrink:0}
+.logo-text{font-family:var(--font-h);font-size:16px;color:var(--ink);line-height:1.2}
+.logo-text span{display:block;font-size:10px;font-family:var(--font-sans);color:var(--ink-soft);font-weight:400;letter-spacing:.05em}
+.back-btn{display:inline-flex;align-items:center;gap:6px;padding:8px 18px;border-radius:999px;font-size:13px;font-weight:700;background:var(--brand-subtle2);color:var(--brand-dark);text-decoration:none;transition:background .2s,transform .2s;white-space:nowrap}
+.back-btn:hover{background:var(--brand-subtle);transform:translateY(-1px)}
+
+/* HERO */
+.page-hero{background:linear-gradient(160deg,#f5f5ff 0%,#eaecff 50%,#f6f6fc 100%);padding:52px 0 44px;position:relative;overflow:hidden}
+.page-hero::before{content:'';position:absolute;top:-80px;right:-80px;width:400px;height:400px;background:radial-gradient(circle,rgba(129,138,255,.15) 0%,transparent 70%);pointer-events:none}
+.page-hero-inner{max-width:900px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+.page-tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--brand-dark);background:var(--brand-subtle2);padding:4px 14px;border-radius:999px;margin-bottom:14px}
+.page-title{font-family:var(--font-h);font-size:clamp(22px,4vw,34px);color:var(--ink);margin-bottom:10px;line-height:1.3;font-weight:400}
+.page-date{font-size:13px;color:var(--ink-soft)}
+.compliance-badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.compliance-badge{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;padding:4px 12px;border-radius:999px;background:#fff;border:1px solid var(--border);color:var(--ink-mid)}
+
+/* LAYOUT: TOC 上部 + コンテンツ */
+.main-wrap{max-width:900px;margin:0 auto;padding:40px 24px 80px}
+
+/* TOC（上部ボックス） */
+.toc-top{background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius);padding:24px 28px;margin-bottom:40px}
+.toc-top-title{font-family:var(--font-h);font-size:14px;color:var(--ink);margin-bottom:14px;font-weight:400;display:flex;align-items:center;gap:8px}
+.toc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px 16px;list-style:none;counter-reset:toc}
+.toc-grid li{counter-increment:toc}
+.toc-grid a{font-size:12.5px;color:var(--ink-soft);text-decoration:none;display:flex;align-items:baseline;gap:5px;transition:color .2s;line-height:1.5;padding:3px 0}
+.toc-grid a::before{content:counter(toc)".";color:var(--brand);font-weight:700;flex-shrink:0;font-size:11px;min-width:18px}
+.toc-grid a:hover{color:var(--brand-dark)}
+@media(max-width:600px){.toc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:400px){.toc-grid{grid-template-columns:1fr}}
+
+/* ARTICLE */
+.article-section{margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid var(--border)}
+.article-section:last-of-type{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.article-section h2{font-family:var(--font-h);font-size:18px;color:var(--ink);margin-bottom:16px;font-weight:400;display:flex;align-items:center;gap:10px;line-height:1.4}
+.article-section h2::before{content:'';display:block;width:4px;height:20px;background:linear-gradient(180deg,var(--brand),var(--brand-dark));border-radius:2px;flex-shrink:0}
+.article-section h3{font-family:var(--font-h);font-size:15px;color:var(--ink-mid);margin:20px 0 10px;font-weight:400}
+.article-section p{font-size:14px;color:var(--ink-mid);line-height:1.9;margin-bottom:12px}
+.article-section p:last-child{margin-bottom:0}
+.article-section ul,.article-section ol{padding-left:1.4em;display:flex;flex-direction:column;gap:7px;margin-bottom:12px}
+.article-section li{font-size:14px;color:var(--ink-mid);line-height:1.8}
+.article-section ul li{list-style:disc}
+.article-section ol li{list-style:decimal}
+.info-box{background:var(--brand-subtle);border:1px solid var(--brand-subtle2);border-radius:var(--radius-sm);padding:16px 18px;margin:16px 0}
+.info-box p{font-size:13.5px;color:var(--ink-mid);line-height:1.8;margin:0}
+.warn-box{background:#fff8f0;border:1px solid #ffe0b2;border-radius:var(--radius-sm);padding:16px 18px;margin:16px 0}
+.warn-box p{font-size:13.5px;color:#7a4a1a;line-height:1.8;margin:0}
+.gdpr-box{background:#f0f7ff;border:1px solid #b3d4f7;border-radius:var(--radius-sm);padding:16px 18px;margin:16px 0}
+.gdpr-box p{font-size:13.5px;color:#1a3a5c;line-height:1.8;margin:0}
+.gdpr-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#185FA5;background:#daeeff;padding:2px 8px;border-radius:4px;margin-right:6px;vertical-align:middle}
+.contact-box{background:linear-gradient(135deg,var(--brand-subtle),var(--brand-subtle2));border-radius:var(--radius);padding:24px;margin-top:16px;border:1px solid rgba(129,138,255,.2)}
+.contact-box dt{font-size:12px;color:var(--ink-soft);margin-bottom:3px;margin-top:10px}
+.contact-box dt:first-child{margin-top:0}
+.contact-box dd{font-size:14px;color:var(--ink);font-weight:500}
+.contact-box dd a{color:var(--brand-dark)}
+table.data-table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13.5px}
+table.data-table th,table.data-table td{padding:10px 14px;border:1px solid var(--border);text-align:left;vertical-align:top;line-height:1.7}
+table.data-table th{background:var(--surface-2);color:var(--ink-soft);font-weight:600;white-space:nowrap;width:34%}
+table.data-table td{color:var(--ink-mid)}
+
+/* FOOTER */
+footer{background:#12122a;color:rgba(255,255,255,.5);padding:32px 0;font-size:13px;text-align:center}
+footer a{color:rgba(255,255,255,.6);text-decoration:underline}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+  :root{--header-h:60px}
+  .page-hero{padding:40px 0 32px}
+  .main-wrap{padding:28px 16px 64px}
+  .toc-top{padding:18px 16px}
+}
+@media print{
+  header,.toc-top,.back-btn{display:none!important}
+  .main-wrap{padding:0}
+}
+</style>
+</head>
+<body>
+
+<a href="#main-content" style="position:absolute;top:-40px;left:8px;z-index:9999;padding:8px 16px;background:var(--brand);color:#fff;border-radius:var(--radius-sm);font-weight:700;transition:top .2s;text-decoration:none" onfocus="this.style.top='8px'" onblur="this.style.top='-40px'">本文へスキップ</a>
+
+<header>
+  <div class="nav-inner">
+    <a href="index.html" class="logo" aria-label="トップページへ">
+      <div class="logo-mark" aria-hidden="true">UD</div>
+      <div class="logo-text">株式会社UD教育社<span>UD Educations Inc.</span></div>
+    </a>
+    <a href="index.html" class="back-btn">← トップへ戻る</a>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-tag">Privacy Policy</div>
+    <h1 class="page-title">プライバシーポリシー<br>（個人情報保護方針）</h1>
+    <p class="page-date">制定日：2024年11月1日　／　最終改定日：2025年6月1日</p>
+    <div class="compliance-badges" aria-label="準拠法令">
+      <span class="compliance-badge">🇯🇵 個人情報保護法（日本）</span>
+      <span class="compliance-badge">🇪🇺 GDPR（EU一般データ保護規則）</span>
+      <span class="compliance-badge">🇬🇧 UK GDPR</span>
+    </div>
+  </div>
+</div>
+
+<div class="main-wrap" id="main-content">
+
+  <!-- ★ 目次（上部） -->
+  <nav class="toc-top" aria-label="目次">
+    <div class="toc-top-title">📋 目次</div>
+    <ol class="toc-grid">
+      <li><a href="#art1">個人情報の定義</a></li>
+      <li><a href="#art2">個人情報の取得</a></li>
+      <li><a href="#art3">取得する情報の項目</a></li>
+      <li><a href="#art4">個人情報の利用目的</a></li>
+      <li><a href="#art5">個人情報の第三者提供</a></li>
+      <li><a href="#art6">個人情報の安全管理</a></li>
+      <li><a href="#art7">個人情報の保存・廃棄</a></li>
+      <li><a href="#art8">ご本人の権利</a></li>
+      <li><a href="#art9">Cookie・アクセス解析</a></li>
+      <li><a href="#art10">未成年者の個人情報</a></li>
+      <li><a href="#art11">越境データ移転</a></li>
+      <li><a href="#art12">ポリシーの変更</a></li>
+      <li><a href="#art13">お問い合わせ窓口</a></li>
+    </ol>
+  </nav>
+
+  <div class="info-box">
+    <p>株式会社UD教育社（以下「当社」）は、個人情報の保護に関する法律（個人情報保護法）、EU一般データ保護規則（GDPR）、UK GDPRおよびその他の適用法令を遵守し、以下のプライバシーポリシー（以下「本ポリシー」）に従って個人情報を適切に取り扱います。</p>
+  </div>
+
+  <!-- 第1条 -->
+  <section class="article-section" id="art1">
+    <h2>第1条　個人情報の定義</h2>
+    <p>本ポリシーにおける「個人情報」とは、生存する個人に関する情報であって、氏名、メールアドレス、住所その他の記述等により特定の個人を識別できるものをいいます（個人情報保護法第2条第1項）。</p>
+    <div class="gdpr-box">
+      <p><span class="gdpr-label">GDPR</span>EU居住者の個人情報については、GDPR第4条の「個人データ」として取り扱います。当社はGDPRにおける「データ管理者（Data Controller）」として行動します。</p>
+    </div>
+  </section>
+
+  <!-- 第2条 -->
+  <section class="article-section" id="art2">
+    <h2>第2条　個人情報の取得</h2>
+    <p>当社は、以下の場合に個人情報を取得します。</p>
+    <ul>
+      <li>お問い合わせフォーム（Googleフォーム）を通じてお問い合わせをいただく場合</li>
+      <li>講演・セミナー・研修のお申し込みをいただく場合</li>
+      <li>教具・教材（日本語版・英語版・その他言語版を含む）の購入・ご発注をいただく場合</li>
+      <li>メール等にてご連絡をいただく場合</li>
+      <li>名刺・書面等により情報提供をいただく場合</li>
+    </ul>
+    <p>当社は、不正な手段によって個人情報を取得しません。GDPRの適用対象となる場合、取得に際して適切な法的根拠（契約履行・正当な利益・同意等）を確保します。</p>
+  </section>
+
+  <!-- 第3条 -->
+  <section class="article-section" id="art3">
+    <h2>第3条　取得する個人情報の項目</h2>
+    <table class="data-table">
+      <tr><th>取得場面</th><th>取得する情報の種類</th></tr>
+      <tr><td>お問い合わせ</td><td>氏名、所属機関・事業所名、役職、メールアドレス、お問い合わせ内容、居住国</td></tr>
+      <tr><td>講演・研修申し込み</td><td>氏名、所属、役職、メールアドレス、電話番号、希望日程・内容</td></tr>
+      <tr><td>教材購入（国内・海外）</td><td>法人名または氏名、メールアドレス、配送先住所（国・郵便番号含む）、電話番号、ご注文内容</td></tr>
+      <tr><td>名刺・書面</td><td>氏名、所属・役職、連絡先</td></tr>
+    </table>
+  </section>
+
+  <!-- 第4条 -->
+  <section class="article-section" id="art4">
+    <h2>第4条　個人情報の利用目的と法的根拠</h2>
+    <table class="data-table">
+      <tr><th>利用目的</th><th>法的根拠（GDPR Art.6）</th></tr>
+      <tr><td>お問い合わせへの回答・連絡</td><td>正当な利益（Art.6(1)(f)）</td></tr>
+      <tr><td>教材・サービスの提供・納品・アフターサービス</td><td>契約履行（Art.6(1)(b)）</td></tr>
+      <tr><td>請求書・契約書等の作成・発送</td><td>契約履行 / 法的義務（Art.6(1)(b)(c)）</td></tr>
+      <tr><td>サービスに関する情報提供・案内</td><td>正当な利益または同意（Art.6(1)(a)(f)）</td></tr>
+      <tr><td>品質向上・改善のための分析・調査</td><td>正当な利益（Art.6(1)(f)）</td></tr>
+      <tr><td>法令上の義務の履行</td><td>法的義務（Art.6(1)(c)）</td></tr>
+    </table>
+    <div class="warn-box">
+      <p>⚠️ 当社は上記の利用目的の範囲を超えて個人情報を利用しません。利用目的を変更する場合は本人に通知または公表します。</p>
+    </div>
+  </section>
+
+  <!-- 第5条 -->
+  <section class="article-section" id="art5">
+    <h2>第5条　個人情報の第三者提供</h2>
+    <p>当社は、以下を除きご本人の同意なく個人情報を第三者に提供しません。</p>
+    <ul>
+      <li>法令に基づく場合</li>
+      <li>人の生命・身体・財産の保護のために必要で、本人同意が困難な場合</li>
+      <li>公衆衛生の向上または児童の健全育成のために特に必要で、本人同意が困難な場合</li>
+      <li>国・地方公共団体が法令の定める事務を遂行することに協力する必要がある場合</li>
+    </ul>
+    <h3>業務委託先への提供</h3>
+    <p>利用目的の達成に必要な範囲で、会計・配送・システム会社等に委託する場合があります。委託先に対し適切な監督を行い、GDPRの適用がある場合はデータ処理契約（DPA）を締結します。</p>
+    <h3>Googleサービスの利用</h3>
+    <p>お問い合わせフォームにGoogleフォームを使用しています。入力情報はGoogleのサーバーに送信されます。詳細は<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Googleプライバシーポリシー</a>をご覧ください。</p>
+  </section>
+
+  <!-- 第6条 -->
+  <section class="article-section" id="art6">
+    <h2>第6条　個人情報の安全管理</h2>
+    <p>当社は個人情報の紛失・破壊・改ざん・漏洩等を防止するため、以下の安全管理措置を講じます。</p>
+    <ul>
+      <li><strong>組織的措置：</strong>個人情報保護責任者を設置し、従業員への周知・教育を実施します</li>
+      <li><strong>人的措置：</strong>従業員に対して秘密保持誓約を求めます</li>
+      <li><strong>物理的措置：</strong>書類・記録媒体は施錠管理し、不要になった際は適切に廃棄します</li>
+      <li><strong>技術的措置：</strong>アクセス制限、パスワード管理、セキュリティソフトの活用等を行います</li>
+    </ul>
+    <div class="gdpr-box">
+      <p><span class="gdpr-label">GDPR</span>個人データ侵害（データ漏洩等）が発生した場合、GDPR Art.33に基づき、72時間以内に所轄の監督機関へ通知するとともに、高リスクな侵害については本人にも通知します。</p>
+    </div>
+  </section>
+
+  <!-- 第7条 -->
+  <section class="article-section" id="art7">
+    <h2>第7条　個人情報の保存・廃棄</h2>
+    <p>当社は、個人情報を利用目的の達成に必要な合理的な期間のみ保存します。利用目的が達成された後は、法令上の保存義務がある場合を除き、適切な方法で廃棄または削除します。</p>
+    <div class="info-box">
+      <p>📌 <strong>保存期間の考え方</strong><br>
+      具体的な保存期間は、取引の性質・法令上の義務（税務書類：最長7年、商法上の帳簿等）・紛争解決の必要性等を総合的に考慮して判断します。法令上の保存義務がない場合は、利用目的達成後に速やかに廃棄します。</p>
+    </div>
+    <div class="gdpr-box">
+      <p><span class="gdpr-label">GDPR</span>GDPR Art.5(1)(e)（保存制限の原則）に基づき、EU居住者の個人データを目的達成後も不必要に保持することはありません。保存期間の詳細についてはお問い合わせください。</p>
+    </div>
+  </section>
+
+  <!-- 第8条 -->
+  <section class="article-section" id="art8">
+    <h2>第8条　ご本人の権利</h2>
+    <p>当社が保有する個人情報について、ご本人（または法定代理人）は以下の権利を有します。</p>
+    <table class="data-table">
+      <tr><th>権利の種類</th><th>内容</th><th>根拠</th></tr>
+      <tr><td><strong>利用目的の通知</strong></td><td>保有個人データの利用目的の通知を求める権利</td><td>個人情報保護法</td></tr>
+      <tr><td><strong>開示・アクセス権</strong></td><td>保有個人データの開示・コピーを求める権利</td><td>個人情報保護法 / GDPR Art.15</td></tr>
+      <tr><td><strong>訂正・更新</strong></td><td>不正確・不完全なデータの訂正・補完を求める権利</td><td>個人情報保護法 / GDPR Art.16</td></tr>
+      <tr><td><strong>削除（忘れられる権利）</strong></td><td>一定の要件を満たす場合にデータの削除を求める権利</td><td>個人情報保護法 / GDPR Art.17</td></tr>
+      <tr><td><strong>処理の制限</strong></td><td>一定の条件下でデータ処理の停止・制限を求める権利</td><td>GDPR Art.18</td></tr>
+      <tr><td><strong>データポータビリティ</strong></td><td>機械可読形式でのデータ提供・移転を求める権利</td><td>個人情報保護法 / GDPR Art.20</td></tr>
+      <tr><td><strong>異議申立て</strong></td><td>正当な利益を根拠とする処理に対して異議を申し立てる権利</td><td>GDPR Art.21</td></tr>
+      <tr><td><strong>同意の撤回</strong></td><td>同意に基づく処理について、いつでも同意を撤回する権利</td><td>GDPR Art.7(3)</td></tr>
+      <tr><td><strong>監督機関への申立て</strong></td><td>EU居住者は自国の監督機関（DPA）に苦情を申し立てる権利</td><td>GDPR Art.77</td></tr>
+    </table>
+    <p style="margin-top:14px">上記のご請求は下記窓口までご連絡ください。本人確認の上、<strong>日本法：原則2週間以内 / GDPR：原則1ヶ月以内</strong>（最大3ヶ月まで延長可）に対応します。</p>
+    <div class="warn-box">
+      <p>⚠️ 法令上の例外事由に該当する場合は対応できないことがあります。その場合は理由をご説明します。</p>
+    </div>
+  </section>
+
+  <!-- 第9条 -->
+  <section class="article-section" id="art9">
+    <h2>第9条　Cookieおよびアクセス解析</h2>
+    <p>当社ウェブサイトでは、利便性の向上およびアクセス状況の把握を目的として、<strong>Cookie（クッキー）を使用することがあります。</strong></p>
+    <h3>使用するCookieの種類</h3>
+    <ul>
+      <li><strong>必須Cookie：</strong>ウェブサイトの基本的な動作に必要なCookieです。これらはオプトアウトできません。</li>
+      <li><strong>分析・計測Cookie：</strong>アクセス解析（Google Analytics等）のために使用する場合があります。オプトアウト可能です。</li>
+    </ul>
+    <div class="gdpr-box">
+      <p><span class="gdpr-label">GDPR / eプライバシー指令</span>EU・UK居住者に対しては、必須Cookie以外のCookieの設置前に同意を取得します。同意はいつでも撤回できます。Cookieの詳細設定はブラウザの設定画面からも管理できます。</p>
+    </div>
+    <p>アクセス解析ツールを導入する場合は、本ポリシーを改定の上お知らせします。</p>
+  </section>
+
+  <!-- 第10条 -->
+  <section class="article-section" id="art10">
+    <h2>第10条　未成年者の個人情報</h2>
+    <p>当社のサービスは教育事業所・学校・NPO等の法人・団体を主な対象とするBtoBサービスです。18歳未満の方が直接個人情報を送信される場合は、保護者の同意を得た上でご連絡ください。</p>
+    <div class="gdpr-box">
+      <p><span class="gdpr-label">GDPR</span>EU居住の16歳未満の方（加盟国によっては13歳未満）に対してサービスを直接提供する場合は、保護者の同意が必要です（GDPR Art.8）。</p>
+    </div>
+  </section>
+
+  <!-- 第11条 -->
+  <section class="article-section" id="art11">
+    <h2>第11条　越境データ移転（国際的な個人情報の取り扱い）</h2>
+    <p>当社は日本に拠点を置き、日本法に基づき個人情報を管理します。業務上の必要から、日本国外のサーバーやサービス（Googleフォーム等）を使用する場合があります。</p>
+    <div class="gdpr-box">
+      <p><span class="gdpr-label">GDPR Art.44-49</span>EU/EEA域外（日本）へのデータ移転については、欧州委員会が日本を「十分な保護水準を有する国」として認定（十分性認定、2019年）していることから、標準契約条項（SCC）等の追加措置なしに移転が可能です。ただし、日本・EU間の個人情報取扱いについては、個人情報保護委員会のガイドラインに従います。</p>
+    </div>
+    <p>米国等その他の国へのデータ移転が生じる場合（Googleサービス等）は、標準契約条項等の適切な保護措置を確保します。</p>
+  </section>
+
+  <!-- 第12条 -->
+  <section class="article-section" id="art12">
+    <h2>第12条　プライバシーポリシーの変更</h2>
+    <p>当社は法令の変更・事業内容の変化等に応じて本ポリシーを改定することがあります。改定後は当ウェブサイトへの掲載をもって効力を生じます。GDPRの適用対象となるお客様には、重要な変更を行う場合に個別に通知します。</p>
+  </section>
+
+  <!-- 第13条 -->
+  <section class="article-section" id="art13">
+    <h2>第13条　個人情報に関するお問い合わせ窓口</h2>
+    <p>個人情報の取り扱いに関するご意見・ご相談・開示請求等は以下の窓口までご連絡ください。</p>
+    <div class="contact-box">
+      <dl>
+        <dt>会社名</dt><dd>株式会社UD教育社</dd>
+        <dt>個人情報保護責任者（Data Protection Contact）</dt><dd>藤本応知</dd>
+        <dt>住所</dt><dd>〒142-0064　東京都品川区旗の台3-10-2</dd>
+        <dt>メールアドレス</dt><dd><a href="mailto:info@ud-education.com">info@ud-education.com</a></dd>
+        <dt>受付時間</dt><dd>平日11:00〜18:00（不定休）</dd>
+        <dt>回答期間</dt><dd>日本法：原則2週間以内 / GDPR対応：原則1ヶ月以内</dd>
+        <dt>言語</dt><dd>日本語・英語 English available</dd>
+      </dl>
+    </div>
+    <p style="margin-top:14px;font-size:13px;color:var(--ink-soft)">※ EU居住者の方は、当社への申し出に加え、お住まいの国の個人情報保護監督機関（DPA）に苦情を申し立てることもできます。</p>
+  </section>
+
+  <div style="background:var(--surface-2);border-radius:var(--radius);padding:20px 24px;margin-top:8px;border:1px solid var(--border)">
+    <p style="font-size:13px;color:var(--ink-soft);margin:0">制定日：2024年11月1日　／　最終改定日：2025年6月1日<br>株式会社UD教育社</p>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2024 株式会社UD教育社　／　<a href="index.html">トップページ</a>　／　<a href="tokushoho.html">特定商取引法に基づく表記</a></p>
+</footer>
+
+</body>
+</html>
